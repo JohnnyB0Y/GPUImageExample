@@ -9,5 +9,6 @@ target 'GPUImageExample' do
 	pod 'GPUImage'
     pod 'SVProgressHUD'
     pod 'AGTimerManager'
+    pod 'AGCategories'
     
 end

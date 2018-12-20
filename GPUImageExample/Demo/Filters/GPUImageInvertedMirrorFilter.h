@@ -7,10 +7,13 @@
 //  倒影镜像
 
 #import "GPUImageFilterGroup.h"
+@class GPUImageVideoCamera;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GPUImageInvertedMirrorFilter : GPUImageFilterGroup
+@interface GPUImageInvertedMirrorFilter : GPUImageFilter
+
+- (instancetype) initWithVideoCamera:(GPUImageVideoCamera *)camera;
 
 @end
 

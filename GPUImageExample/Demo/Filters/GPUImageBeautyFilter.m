@@ -145,7 +145,7 @@ NSString *const kGPUImageBeautifyFragmentShaderString = SHADER_STRING
 #pragma mark -
 #pragma mark GPUImageInput protocol
 
-- (void)newFrameReadyAtTime:(CMTime)frameTime atIndex:(NSInteger)textureIndex;
+- (void)newFrameReadyAtTime:(CMTime)frameTime atIndex:(NSInteger)textureIndex
 {
     for (GPUImageOutput<GPUImageInput> *currentFilter in self.initialFilters)
     {
@@ -159,7 +159,7 @@ NSString *const kGPUImageBeautifyFragmentShaderString = SHADER_STRING
     }
 }
 
-- (void)setInputFramebuffer:(GPUImageFramebuffer *)newInputFramebuffer atIndex:(NSInteger)textureIndex;
+- (void)setInputFramebuffer:(GPUImageFramebuffer *)newInputFramebuffer atIndex:(NSInteger)textureIndex
 {
     for (GPUImageOutput<GPUImageInput> *currentFilter in self.initialFilters)
     {

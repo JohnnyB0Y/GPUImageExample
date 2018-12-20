@@ -7,9 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "Demo/BeautyViewController.h"
-#import "Demo/FaceViewController.h"
-#import "Demo/PictureViewController.h"
+#import "Demo/Controller/BeautyViewController.h"
+#import "Demo/Controller/FaceViewController.h"
+#import "Demo/Controller/PictureViewController.h"
+#import "Demo/Controller/OpenGLViewController.h"
+#import "Demo/Controller/MirrorViewController.h"
+#import <SVProgressHUD.h>
 
 @interface ViewController ()
 
@@ -23,7 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _items = @[@"人脸识别", @"美颜相机", @"图片美化"];
+    _items = @[@"人脸识别", @"美颜相机", @"图片美化", @"OpenGL ES", @"倒影镜像"];
     
 }
 
@@ -57,7 +60,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 124.;
+    return 24.;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -76,6 +79,12 @@
     else if ( indexPath.row == 2 ) {
         // 图片美化
         targetVC = [[PictureViewController alloc] init];
+    }
+    else if ( indexPath.row == 3 ) {
+        targetVC = [[OpenGLViewController alloc] init];
+    }
+    else if ( indexPath.row == 4 ) {
+        targetVC = [[MirrorViewController alloc] init];
     }
     
     if ( targetVC ) {
