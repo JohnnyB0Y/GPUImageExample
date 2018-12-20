@@ -29,8 +29,6 @@
 		3ADC046621BF642D00551C79 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADC046521BF642D00551C79 /* AVFoundation.framework */; };
 		3ADC046821BF643800551C79 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADC046721BF643800551C79 /* QuartzCore.framework */; };
 		3AE22A9621BFDEE600A9FBDD /* AGPopupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE22A9421BFDEE600A9FBDD /* AGPopupManager.m */; };
-		3AEF485721CB49230070AD05 /* abc.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3AEF485621CB49230070AD05 /* abc.mp4 */; };
-		3AEF485921CB492A0070AD05 /* qwe.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3AEF485821CB492A0070AD05 /* qwe.mp4 */; };
 		3AEF486521CB4A080070AD05 /* BeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF485E21CB4A070070AD05 /* BeautyViewController.m */; };
 		3AEF486621CB4A080070AD05 /* MirrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF485F21CB4A070070AD05 /* MirrorViewController.m */; };
 		3AEF486721CB4A080070AD05 /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF486021CB4A070070AD05 /* OpenGLViewController.m */; };
@@ -72,8 +70,6 @@
 		3ADC046721BF643800551C79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3AE22A9421BFDEE600A9FBDD /* AGPopupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGPopupManager.m; sourceTree = "<group>"; };
 		3AE22A9521BFDEE600A9FBDD /* AGPopupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPopupManager.h; sourceTree = "<group>"; };
-		3AEF485621CB49230070AD05 /* abc.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = abc.mp4; sourceTree = "<group>"; };
-		3AEF485821CB492A0070AD05 /* qwe.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = qwe.mp4; sourceTree = "<group>"; };
 		3AEF485B21CB4A070070AD05 /* OpenGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLViewController.h; sourceTree = "<group>"; };
 		3AEF485C21CB4A070070AD05 /* FaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceViewController.h; sourceTree = "<group>"; };
 		3AEF485D21CB4A070070AD05 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
@@ -118,8 +114,6 @@
 		3A1410AF21C699B400C06081 /* Shader */ = {
 			isa = PBXGroup;
 			children = (
-				3AEF485821CB492A0070AD05 /* qwe.mp4 */,
-				3AEF485621CB49230070AD05 /* abc.mp4 */,
 				3A1410B521C69A2D00C06081 /* copyImage.fsh */,
 				3A1410B421C69A2D00C06081 /* copyImage.vsh */,
 			);
@@ -291,10 +285,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AEF485721CB49230070AD05 /* abc.mp4 in Resources */,
 				3ADC045621BF624A00551C79 /* LaunchScreen.storyboard in Resources */,
 				3ADC045321BF624A00551C79 /* Assets.xcassets in Resources */,
-				3AEF485921CB492A0070AD05 /* qwe.mp4 in Resources */,
 				3A1410B621C69A2D00C06081 /* copyImage.vsh in Resources */,
 				3ADC045121BF624900551C79 /* Main.storyboard in Resources */,
 				3A1410B721C69A2D00C06081 /* copyImage.fsh in Resources */,
