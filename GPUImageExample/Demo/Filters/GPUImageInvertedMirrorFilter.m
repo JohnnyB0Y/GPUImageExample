@@ -159,14 +159,6 @@
     // 解锁
     [[self framebufferForOutput] unlock];
     
-    if (usingNextFrameForImageCapture)
-    {
-    }
-    else
-    {
-        //        [self removeOutputFramebuffer];
-    }
-    
     for (id<GPUImageInput> currentTarget in targets)
     {
         if (currentTarget != self.targetToIgnoreForUpdates)

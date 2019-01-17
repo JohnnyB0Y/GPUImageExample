@@ -8,7 +8,8 @@ target 'GPUImageExample' do
 	pod 'SDWebImage'
 	pod 'GPUImage'
     pod 'SVProgressHUD'
-    pod 'AGTimerManager'
-    pod 'AGCategories'
+    pod 'AGTimerManager', '~> 0.5.1'
+    pod 'AGCategories', '~> 0.1.6'
+    pod 'AGViewModel', '~> 0.6.12'
     
 end

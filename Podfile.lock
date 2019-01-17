@@ -1,6 +1,7 @@
 PODS:
-  - AGCategories (0.1.2)
-  - AGTimerManager (0.4.0)
+  - AGCategories (0.1.6)
+  - AGTimerManager (0.5.1)
+  - AGViewModel (0.6.12)
   - GPUImage (0.1.7)
   - Masonry (1.1.0)
   - SDWebImage (4.4.3):
@@ -9,8 +10,9 @@ PODS:
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
-  - AGCategories
-  - AGTimerManager
+  - AGCategories (~> 0.1.6)
+  - AGTimerManager (~> 0.5.1)
+  - AGViewModel (~> 0.6.12)
   - GPUImage
   - Masonry
   - SDWebImage
@@ -20,19 +22,21 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AGCategories
     - AGTimerManager
+    - AGViewModel
     - GPUImage
     - Masonry
     - SDWebImage
     - SVProgressHUD
 
 SPEC CHECKSUMS:
-  AGCategories: c4a5f3bc1e894965d421f3e533f8c87e3446c044
-  AGTimerManager: e00af416b40df21811d332e4c76d5ea8d472f800
+  AGCategories: 1dd0221e4af54fb61834237982d81037c40e4d0f
+  AGTimerManager: 26321cb98c200c52bcbac21ebce6f36318ba3927
+  AGViewModel: 8e10a7eca94ec2df174d5191ac17f1f2cb47aa3e
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 5d250cd58566740559fe9cba4cfec6b57880c0ea
+PODFILE CHECKSUM: 77bd1c94878bbbd7f5c66eb3f487c7632b309610
 
 COCOAPODS: 1.5.3

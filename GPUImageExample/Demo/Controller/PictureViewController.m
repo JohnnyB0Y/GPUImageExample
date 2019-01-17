@@ -13,7 +13,9 @@
 @interface PictureViewController ()
 <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
-@property (strong, nonatomic) UIImageView *imageView;
+@property (strong, nonatomic) GPUImageView *imageView; // 负责图片显示
+@property (nonatomic, strong) GPUImageFilterPipeline *filterPipeline; // 负责滤镜组合
+@property (nonatomic, strong) GPUImagePicture *imagePicture; // 负责图片处理
 
 @property (nonatomic, strong) UIImagePickerController *picker;
 
@@ -53,8 +55,19 @@
         didFinishPickingImage:(UIImage *)image
                   editingInfo:(nullable NSDictionary<NSString *,id> *)editingInfo
 {
-    self.imageView.image = image;
+    // 获取图片
+    self.imagePicture = [[GPUImagePicture alloc] initWithImage:image];
     
+    // 组合滤镜
+    GPUImageToonFilter *toonFilter = [[GPUImageToonFilter alloc] init];
+    GPUImageStretchDistortionFilter *stretchFilter = [[GPUImageStretchDistortionFilter alloc] init];
+    
+    self.filterPipeline = [[GPUImageFilterPipeline alloc] initWithOrderedFilters:@[toonFilter, stretchFilter] input:self.imagePicture output:self.imageView];
+    
+    // 处理图片
+    [self.imagePicture processImage];
+    
+    // 退出图片选择器
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -65,11 +78,10 @@
 }
 
 #pragma mark - ----------- Getter Methods ----------
-- (UIImageView *)imageView
+- (GPUImageView *)imageView
 {
     if (_imageView == nil) {
-        _imageView = [[UIImageView alloc] init];
-        _imageView.contentMode = UIViewContentModeScaleAspectFit;
+        _imageView = [[GPUImageView alloc] init];
     }
     return _imageView;
 }
