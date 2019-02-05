@@ -1,0 +1,6 @@
+framework module AGViewModel {
+  umbrella header "AGViewModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

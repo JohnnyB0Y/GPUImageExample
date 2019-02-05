@@ -12,7 +12,7 @@
 #import "Demo/Controller/PictureViewController.h"
 #import "Demo/Controller/OpenGLViewController.h"
 #import "Demo/Controller/MirrorViewController.h"
-#import <SVProgressHUD.h>
+#import "Demo/Controller/AnimationViewController.h"
 
 @interface ViewController ()
 
@@ -26,7 +26,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _items = @[@"人脸识别", @"美颜相机", @"图片美化", @"OpenGL ES", @"倒影镜像"];
+    self.title = @"GPUImage";
+    
+    _items = @[@"人脸识别", @"美颜相机", @"图片美化", @"OpenGL ES", @"倒影镜像", @"Core Animation"];
     
 }
 
@@ -86,10 +88,18 @@
     else if ( indexPath.row == 4 ) {
         targetVC = [[MirrorViewController alloc] init];
     }
+    else if ( indexPath.row == 5 ) {
+        targetVC = [[AnimationViewController alloc] init];
+    }
     
     if ( targetVC ) {
         [self.navigationController pushViewController:targetVC animated:YES];
     }
+}
+
+- (NSString *)getTestTitle
+{
+    return @"Test Title";
 }
 
 @end

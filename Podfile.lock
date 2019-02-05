@@ -1,20 +1,24 @@
 PODS:
-  - AGCategories (0.1.6)
+  - AGCategories (0.1.8)
   - AGTimerManager (0.5.1)
-  - AGViewModel (0.6.12)
+  - AGViewModel (0.6.14)
   - GPUImage (0.1.7)
   - Masonry (1.1.0)
-  - SDWebImage (4.4.3):
-    - SDWebImage/Core (= 4.4.3)
-  - SDWebImage/Core (4.4.3)
+  - Nimble (7.3.3)
+  - Quick (1.3.4)
+  - SDWebImage (4.4.5):
+    - SDWebImage/Core (= 4.4.5)
+  - SDWebImage/Core (4.4.5)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
-  - AGCategories (~> 0.1.6)
+  - AGCategories (~> 0.1.8)
   - AGTimerManager (~> 0.5.1)
-  - AGViewModel (~> 0.6.12)
+  - AGViewModel (~> 0.6.14)
   - GPUImage
   - Masonry
+  - Nimble
+  - Quick
   - SDWebImage
   - SVProgressHUD
 
@@ -25,18 +29,22 @@ SPEC REPOS:
     - AGViewModel
     - GPUImage
     - Masonry
+    - Nimble
+    - Quick
     - SDWebImage
     - SVProgressHUD
 
 SPEC CHECKSUMS:
-  AGCategories: 1dd0221e4af54fb61834237982d81037c40e4d0f
+  AGCategories: 1fcd073caad1c6f369521234cff7abf095e21c29
   AGTimerManager: 26321cb98c200c52bcbac21ebce6f36318ba3927
-  AGViewModel: 8e10a7eca94ec2df174d5191ac17f1f2cb47aa3e
+  AGViewModel: bf47e2b58ec50c5278ef8c9039cfc15c192ce786
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+  Nimble: 3b434b1e7d0a92603a13550a82880b0d952f518e
+  Quick: f4f7f063c524394c73ed93ac70983c609805d481
+  SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 77bd1c94878bbbd7f5c66eb3f487c7632b309610
+PODFILE CHECKSUM: 143f33f117e2e56a18620dfcc9053ca3f906456b
 
 COCOAPODS: 1.5.3

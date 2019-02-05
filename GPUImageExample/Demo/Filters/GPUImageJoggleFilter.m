@@ -7,7 +7,7 @@
 //
 
 #import "GPUImageJoggleFilter.h"
-#import <GPUImage.h>
+//#import <GPUImage.h>
 
 @implementation GPUImageJoggleFilter
 

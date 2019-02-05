@@ -10,6 +10,7 @@
 
 @interface ViewController : UITableViewController
 
+- (NSString *) getTestTitle;
 
 @end
 

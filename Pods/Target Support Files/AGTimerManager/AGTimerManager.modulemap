@@ -1,0 +1,6 @@
+framework module AGTimerManager {
+  umbrella header "AGTimerManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

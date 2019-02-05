@@ -9,7 +9,7 @@
 #import "MirrorViewController.h"
 #import "GPUImageInvertedMirrorFilter.h"
 #import <GPUImage/GPUImage.h>
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 
 @interface MirrorViewController ()
 

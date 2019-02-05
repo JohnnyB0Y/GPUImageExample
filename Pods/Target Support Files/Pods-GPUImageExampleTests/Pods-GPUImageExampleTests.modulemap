@@ -1,0 +1,6 @@
+framework module Pods_GPUImageExampleTests {
+  umbrella header "Pods-GPUImageExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module AGCategories {
+  umbrella header "AGCategories-umbrella.h"
+
+  export *
+  module * { export * }
+}

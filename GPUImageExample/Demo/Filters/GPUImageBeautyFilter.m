@@ -7,7 +7,8 @@
 //
 
 #import "GPUImageBeautyFilter.h"
-#import <GPUImage.h>
+#import <GPUImage/GPUImage.h>
+#import <Masonry/Masonry.h>
 
 // Internal CombinationFilter(It should not be used outside)
 @interface GPUImageCombinationFilter : GPUImageThreeInputFilter

@@ -8,7 +8,8 @@
 
 #import "GPUImageInvertedMirrorFilter.h"
 #import <AGCategories/UIImage+AGTransform.h>
-#import <GPUImage.h>
+#import <GPUImage/GPUImage.h>
+#import <Masonry/Masonry.h>
 
 
 @interface GPUImageInvertedMirrorFilter ()

@@ -7,8 +7,8 @@
 //
 
 #import "BeautyViewController.h"
-#import <Masonry.h>
-#import <GPUImage.h>
+#import <GPUImage/GPUImage.h>
+#import <Masonry/Masonry.h>
 #import <Photos/Photos.h>
 #import <AGTimerManager/AGTimerManager.h>
 
